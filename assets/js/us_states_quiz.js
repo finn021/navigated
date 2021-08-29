@@ -79,7 +79,7 @@ $('#stateInput').keyup(function(event) {
    if($('#text').val() != lastentry) {       
    }
    lastentry = $('#text').val();
-    console.log("test")
+    console.log("test");
     up = stateCodes[lastentry];
    stateCode = stateCode.toUpperCase();
    $('#map').usmap({
