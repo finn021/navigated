@@ -19,11 +19,6 @@
       float: left;
   }
 
-  .navbar #navbar_title {
-      text-align: center;
-      justify-content: center;
-}
-
   .navbar #navbar_search {
       float: right;
   }
