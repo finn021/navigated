@@ -69,3 +69,14 @@ $('#map').usmap({
   stateHoverStyles: {fill: '#121212', stroke: "#ffffff"},
   showLabels: false
 });
+
+$('#text').keyup(function(event) {
+   if($('#text').val() != lastentry) {       
+   }
+   lastentry = $('#text').val()
+   $('#map').usmap({
+  stateSpecificStyles: {
+    'stateCodes[lastentry].toUpperCase()' : {fill: 'yellow'}
+  } 
+  }
+});
