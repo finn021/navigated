@@ -76,7 +76,7 @@ $('#text').keyup(function(event) {
    lastentry = $('#text').val()
    $('#map').usmap({
   stateSpecificStyles: {
-    'stateCodes[lastentry].toUpperCase()' : {fill: 'yellow'}
+    stateCodes[lastentry].toUpperCase() : {fill: 'yellow'}
   } 
 });
 });
