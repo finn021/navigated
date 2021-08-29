@@ -74,7 +74,7 @@ $('#map').usmap({
   showLabels: false
 });
 
-$('#text').keyup(function(event) {
+$('#stateInput').keyup(function(event) {
    if($('#text').val() != lastentry) {       
    }
    lastentry = $('#text').val();
