@@ -79,6 +79,7 @@ $('#stateInput').keyup(function(event) {
    if($('#text').val() != lastentry) {       
    }
    lastentry = $('#text').val();
+            console.log(lastentry);
     stateCode = stateCodes[lastentry];
         console.log(stateCode);
    $('#map').usmap({
