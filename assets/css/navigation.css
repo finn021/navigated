@@ -2,6 +2,7 @@
     width: 100%;
     background-color: #555;
     overflow: auto;
+    margin-botton: 15px;
   }
   
   /* Navbar links */
@@ -10,6 +11,7 @@
     padding: 12px;
     color: white;
     text-decoration: none;
+    font-family: helvetica;
     font-size: 17px;
   }
 
