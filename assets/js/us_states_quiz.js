@@ -1,3 +1,7 @@
+var lastentry;
+var stateCode;
+
+
 let stateCodes = {
 "alabama":"al",
 "alaska":"ak",
@@ -73,10 +77,11 @@ $('#map').usmap({
 $('#text').keyup(function(event) {
    if($('#text').val() != lastentry) {       
    }
-   lastentry = $('#text').val()
+   lastentry = $('#text').val();
+   stateCode = stateCodes[lastentry].toUpperCase();
    $('#map').usmap({
   stateSpecificStyles: {
-    stateCodes[lastentry].toUpperCase() : {fill: 'yellow'}
+    stateCode: {fill: 'yellow'}
   } 
 });
 });
