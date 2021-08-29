@@ -84,7 +84,7 @@ $('#stateInput').keyup(function(event) {
         console.log(stateCode);
    $('#map').usmap({
   stateSpecificStyles: {
-    'stateCode': {fill: 'yellow'}
+    stateCode: {fill: 'yellow'}
   } 
 });
 });
