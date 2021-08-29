@@ -155,8 +155,10 @@
       var height = this.element.height();
       
       // Calculate the width and height to match the container while keeping the labels at a fixed size
-      var xscale = this.element.width()/WIDTH;
-      var yscale = this.element.height()/HEIGHT;
+       //var xscale = this.element.width()/WIDTH;
+      // var yscale = this.element.height()/HEIGHT;
+      var xscale = WIDTH/this.element.width();
+	    var yscale = HEIGHT/this.element.height();
       this.scale = Math.min(xscale, yscale);
       this.labelAreaWidth = Math.ceil(LABELS_WIDTH/this.scale); // The actual width with the labels reversed scaled
       
