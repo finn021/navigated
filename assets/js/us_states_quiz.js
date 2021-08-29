@@ -76,11 +76,11 @@ $('#map').usmap({
 });
 
 $('#stateInput').keyup(function(event) {
-   if($('#text').val() != lastentry) {       
+   if($('#stateInput').val() != lastentry) {       
    }
-   lastentry = $('#text').val();
+   lastentry = $('#stateInput').val();
             console.log(lastentry);
-    stateCode = stateCodes[lastentry];
+    stateCode = stateCodes[lastentry].toUpperCase();
         console.log(stateCode);
    $('#map').usmap({
   stateSpecificStyles: {
