@@ -78,5 +78,5 @@ $('#text').keyup(function(event) {
   stateSpecificStyles: {
     'stateCodes[lastentry].toUpperCase()' : {fill: 'yellow'}
   } 
-  }
+});
 });
