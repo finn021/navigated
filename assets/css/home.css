@@ -34,11 +34,4 @@ body {
     border-top-right-radius: 0.25rem;
     overflow: hidden;
     position: relative;
-    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
-}
-  .cardCaption {
-  flex: 1 1 auto;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
 }
