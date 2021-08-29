@@ -1,4 +1,5 @@
 var lastentry;
+var up;
 var stateCode;
 
 
@@ -79,7 +80,8 @@ $('#stateInput').keyup(function(event) {
    }
    lastentry = $('#text').val();
     console.log("test")
-   stateCode = stateCodes[lastentry].toUpperCase();
+    up = stateCodes[lastentry];
+   stateCode = stateCode.toUpperCase();
    $('#map').usmap({
   stateSpecificStyles: {
     stateCode: {fill: 'yellow'}
