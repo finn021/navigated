@@ -30,7 +30,11 @@
   
   /* Current/active navbar link */
   .active {
-    background-color: #add8e6;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+    color: #add8e6;
   }
   
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
