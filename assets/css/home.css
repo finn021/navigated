@@ -72,6 +72,7 @@
   .cardCaption {
       margin-left: 8px;
       color: white;
-      font-family: helvetica;
+      font-weight: normal;
+      font-family: 'raleway', sans-serif;
       font-size: 1.5em;
 }
