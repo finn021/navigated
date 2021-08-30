@@ -1,3 +1,27 @@
+.bg-image {
+    height: 600px;
+    width: 100%;
+    background-image: url("assets/images/clay-banks-dJu0NhEzlX4-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-family: helvetica
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
 .card-container {
     display: flex;
     justify-content: center;
