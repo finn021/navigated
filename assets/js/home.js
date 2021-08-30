@@ -1,4 +1,4 @@
-document.querySelector(".search-box").addEventListener("input", function (e) {
+function searchAll() {
   var input, filter, container, card, a, i, txtValue;
   input = document.querySelector(".search-box");
   filter = input.value.toUpperCase();
@@ -15,4 +15,4 @@ document.querySelector(".search-box").addEventListener("input", function (e) {
       card[i].style.display = "none";
     }
   }
-});
+}
