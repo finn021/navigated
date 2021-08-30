@@ -6,7 +6,7 @@ body {
     width: 100%;
     background-color: #121212;
     overflow: auto;
-    margin-botton: 15px;
+    position: sticky;
   }
   
   /* Navbar links */
