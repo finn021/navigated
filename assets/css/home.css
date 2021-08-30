@@ -5,6 +5,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
     .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
@@ -17,7 +19,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 80%;
+  height: 600px;
+  width: 100%;
   padding: 20px;
   text-align: center;
 }
