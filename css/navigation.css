@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.navbar {
+nav {
     width: 100%;
     background-color: #333;
     overflow: auto;
@@ -14,7 +14,7 @@ body {
   }
   
   /* Navbar links */
-  .navbar a, input {
+  nav a, input {
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -22,16 +22,16 @@ body {
     font-size: 17px;
   }
 
-  .navbar #navbar_home {
+  nav #navbar_home {
       float: left;
   }
 
-  .navbar #navbar_search, .search.box {
+  nav #navbar_search, .search.box {
       float: right;
   }
   
   /* Navbar links on mouse-over */
-  .navbar a:hover {
+  nav a:hover {
     -webkit-transition: all 0.5s 0s ease;
     -moz-transition: all 0.5s 0s ease;
     -o-transition: all 0.5s 0s ease;
@@ -46,7 +46,7 @@ body {
   
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
   @media screen and (max-width: 500px) {
-    .navbar a {
+    nav a {
       float: none;
       display: block;
     }
