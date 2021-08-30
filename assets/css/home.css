@@ -1,22 +1,10 @@
-.bg-image {
-    height: 600px;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 0.5rem;
+   .title-container {
     background-image: url("../../assets/images/clay-banks-dJu0NhEzlX4-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-}
-    .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-family: helvetica;
-  border: 3px solid #f1f1f1;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,13 +12,9 @@
   z-index: 2;
   height: 600px;
   width: 100%;
-  padding: 20px;
-  margin-top: 30px;
   margin-bottom: 30px;
-  border-radius: 0.5rem;
   text-align: center;
 }
-
 .card-container {
     display: flex;
     justify-content: center;
