@@ -68,10 +68,14 @@
     overflow: hidden;
     position: relative;
 }
-  .cardCaption {
+  .cardCaption h3 {
       margin-left: 8px;
       color: white;
       font-weight: normal;
       font-family: 'raleway', sans-serif;
       font-size: 1.5em;
+}
+  p {
+      font-family: 'raleway', sans-serif;
+      font-size: 12px;
 }
