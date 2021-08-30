@@ -12,11 +12,7 @@
   <script src="js/navigation.js" defer></script>
 </head>
 <body>
-  <div class="navbar">
-    <a style="color:white;" id="navbar_home" class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-    <a style="color:white;"id="navbar_search" href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-    <input style="color:black;" class="search-box" type="text" placeholder="Search Quizzes..." onkeyup="searchAll()">
-  </div>
+  <nav></nav>
   <div class="background-container">
     <div class="title-container">
       <h1 class="title" style="font-size:6vw;">Navigated</h1>
@@ -63,8 +59,8 @@
     </a>
   </div>
   <script>
-    $(nav).load(./components/navbar.html);
-    $(footer).load(./components/footer.html);
+    $(nav).load(./comp/navbar.html);
+    $(footer).load(./comp/footer.html);
   </script>
 </body>
 </html>
