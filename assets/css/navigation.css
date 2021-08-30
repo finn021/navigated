@@ -17,7 +17,6 @@ body {
   .navbar a, input {
     text-align: center;
     padding: 12px;
-    color: white;
     text-decoration: none;
     font-family: helvetica;
     font-size: 17px;
@@ -27,7 +26,7 @@ body {
       float: left;
   }
 
-  .navbar #navbar_search, #navbar_searchbox {
+  .navbar #navbar_search, .search.box {
       float: right;
   }
   
