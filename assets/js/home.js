@@ -1,5 +1,5 @@
 function searchAll() {
-  var input, filter, container, card, a, i, txtValue;
+  var input, filter, container, card, h3, i, txtValue;
   input = document.querySelector(".search-box");
   filter = input.value.toUpperCase();
   container = document.querySelector(".card-container");
