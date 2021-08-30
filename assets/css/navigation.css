@@ -9,6 +9,7 @@ body {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    margin: 0;
   }
   
   /* Navbar links */
