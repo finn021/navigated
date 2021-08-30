@@ -1,10 +1,11 @@
-   .background-container {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.background-container {
     background-image: url("../../assets/images/clay-banks-dJu0NhEzlX4-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   color: white;
-  font-family: helvetica;
   z-index: auto;
   height: 400px;
   width: 100%;
@@ -26,7 +27,7 @@
    padding: 30px;
    border-radius: 0.25rem;
    background-color: rgba(0,0,0,0.4);
-   font-family: helvetica;
+   font-family: 'Raleway', sans-serif;
 }
    
 .card-container {
