@@ -10,7 +10,7 @@ body {
   }
   
   /* Navbar links */
-  .navbar a {
+  .navbar a, input {
     text-align: center;
     padding: 12px;
     color: white;
@@ -23,7 +23,7 @@ body {
       float: left;
   }
 
-  .navbar #navbar_search {
+  .navbar #navbar_search, #navbar_searchbox {
       float: right;
   }
   
