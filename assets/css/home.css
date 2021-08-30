@@ -6,7 +6,7 @@
   color: white;
   font-family: helvetica;
   position: block;
-  z-index: 0;
+  z-index: auto;
   height: 400px;
   width: 100%;
   margin-bottom: 30px;
