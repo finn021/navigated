@@ -14,7 +14,7 @@ nav {
   }
   
   /* Navbar links */
-  nav a, input {
+  nav a, {
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -26,7 +26,7 @@ nav {
       float: left;
   }
 
-  nav #navbar_search, .search.box {
+  nav #navbar_search {
       float: right;
   }
   
