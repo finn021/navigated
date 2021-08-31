@@ -1,59 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
 .card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #fff;
-  }
-  .card {
-    width: 30%;
-    height: auto;
-    margin: 15px;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    color: inherit;
-    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
-    background: #333;
-    box-sizing: border-box;
-    transition: transform .5s;
-    @media(min-width: 40rem) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fff;
+}
+.card {
+  width: 30%;
+  height: auto;
+  margin: 15px;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  background: #333;
+  box-sizing: border-box;
+  transition: transform 0.5s;
+  @media (min-width: 40rem) {
     width: 50%;
   }
-  @media(min-width: 56rem) {
+  @media (min-width: 56rem) {
     width: 33.3333%;
   }
-  }
-  .card:hover {
-      cursor: pointer;
-      transform: scale(1.1);
 }
-      
-  .cardImage {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    overflow: hidden;
-    position: relative;
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
-  .cardCaption h3 {
-      margin-left: 8px;
-      color: white;
-      font-weight: normal;
-      font-decoration: none;
-      font-family: 'raleway', sans-serif;
-      font-size: 1.5em;
+
+.cardImage {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
 }
-  .cardCaption p {
-      font-family: 'raleway', sans-serif;
-      font-size: 12px;
-      margin-left: 8px;
-      color: white;
-      font-weight: normal;
-      font-decoration: none;
+.cardCaption h3 {
+  margin-left: 8px;
+  color: white;
+  font-weight: normal;
+  font-decoration: none;
+  font-family: "raleway", sans-serif;
+  font-size: 1.5em;
+}
+.cardCaption p {
+  font-family: "raleway", sans-serif;
+  font-size: 12px;
+  margin-left: 8px;
+  color: white;
+  font-weight: normal;
+  font-decoration: none;
 }

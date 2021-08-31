@@ -1,53 +1,53 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 nav {
-    width: 100%;
-    background-color: #333;
-    overflow: auto;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    margin: 0;
-    z-index: 4;
-  }
-  
-  /* Navbar links */
+  width: 100%;
+  background-color: #333;
+  overflow: auto;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin: 0;
+  z-index: 4;
+}
+
+/* Navbar links */
+nav a {
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-family: helvetica;
+  font-size: 17px;
+}
+
+nav #navbar_home {
+  float: left;
+}
+
+nav #navbar_search {
+  float: right;
+}
+
+/* Navbar links on mouse-over */
+nav a:hover {
+  -webkit-transition: all 0.5s 0s ease;
+  -moz-transition: all 0.5s 0s ease;
+  -o-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+  color: #add8e6;
+}
+
+/* Current/active navbar link */
+.active {
+  color: #add8e6;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
   nav a {
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-family: helvetica;
-    font-size: 17px;
+    float: none;
+    display: block;
   }
-
-  nav #navbar_home {
-      float: left;
-  }
-
-  nav #navbar_search {
-      float: right;
-  }
-  
-  /* Navbar links on mouse-over */
-  nav a:hover {
-    -webkit-transition: all 0.5s 0s ease;
-    -moz-transition: all 0.5s 0s ease;
-    -o-transition: all 0.5s 0s ease;
-    transition: all 0.5s 0s ease;
-    color: #add8e6;
-  }
-  
-  /* Current/active navbar link */
-  .active {
-    color: #add8e6;
-  }
-  
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 500px) {
-    nav a {
-      float: none;
-      display: block;
-    }
-  }
+}
