@@ -142,3 +142,24 @@ $(answerInput).on("input", function (e) {
     }
   }
 });
+
+function updateAll {
+  var indexes = getAllIndexes(stateValues, true);
+  for (let i = 0; i < indexes.length; i++) {
+    indexes //continue
+  
+}
+  $('#map').usmap({
+  stateSpecificStyles: {
+    'MD': {fill: 'yellow'},
+    'VA': {fill: 'teal'}
+  } 
+});
+
+function getAllIndexes(arr, val) {
+    var indexes = [], i;
+    for(i = 0; i < arr.length; i++)
+        if (arr[i] === val)
+            indexes.push(i);
+    return indexes;
+}
