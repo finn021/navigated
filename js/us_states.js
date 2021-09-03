@@ -9,12 +9,11 @@ $(answerInput).on("input", function (e) {
       var index = states.indexOf(formattedInput);
       if (stateValues[index] == false) {
         stateValues[index] = true;
-        console.log(stateValues);
         $("#answerInput").val("");
         var count = stateValues.reduce(function(n, val) {
         return n + (val === true); }, 0);
          $("#count").text(count + "/50");
-        console.log(count);
+         
       }
     }
   }
