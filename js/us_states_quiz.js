@@ -60,26 +60,145 @@ let stateCodes = {
   wyoming: "wy",
 };
 
-var states = ['alabama','alaska','americansamoa','arizona','arkansas','california','colorado','connecticut','delaware','districtofcolumbia','federatedstatesofmicronesia','florida','georgia','guam','hawaii','idaho','illinois','indiana','iowa','kansas','kentucky','louisiana','maine','marshall islands','maryland','massachusetts','michigan','minnesota','mississippi','missouri','montana','nebraska','nevada','newhampshire','newjersey','newmexico','newyork','northcarolina','northdakota','northernmarianaislands','ohio','oklahoma','oregon','palau','pennsylvania','puertorico','rhodeisland','southcarolina','southdakota','tennessee','texas','utah','vermont','virginisland','virginia','washington','westvirginia','wisconsin','wyoming'];
+var states = [
+  "alabama",
+  "alaska",
+  "americansamoa",
+  "arizona",
+  "arkansas",
+  "california",
+  "colorado",
+  "connecticut",
+  "delaware",
+  "districtofcolumbia",
+  "federatedstatesofmicronesia",
+  "florida",
+  "georgia",
+  "guam",
+  "hawaii",
+  "idaho",
+  "illinois",
+  "indiana",
+  "iowa",
+  "kansas",
+  "kentucky",
+  "louisiana",
+  "maine",
+  "marshall islands",
+  "maryland",
+  "massachusetts",
+  "michigan",
+  "minnesota",
+  "mississippi",
+  "missouri",
+  "montana",
+  "nebraska",
+  "nevada",
+  "newhampshire",
+  "newjersey",
+  "newmexico",
+  "newyork",
+  "northcarolina",
+  "northdakota",
+  "northernmarianaislands",
+  "ohio",
+  "oklahoma",
+  "oregon",
+  "palau",
+  "pennsylvania",
+  "puertorico",
+  "rhodeisland",
+  "southcarolina",
+  "southdakota",
+  "tennessee",
+  "texas",
+  "utah",
+  "vermont",
+  "virginisland",
+  "virginia",
+  "washington",
+  "westvirginia",
+  "wisconsin",
+  "wyoming",
+];
 
-var stateValues = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+var stateValues = [
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+];
 
-$(answerInput).on('input',function(e){
-  if (typeof this.value !== 'undefined') {
+$(answerInput).on("input", function (e) {
+  if (typeof this.value !== "undefined") {
     var input = this.value.toLowerCase();
-    var formattedInput = input.replace(/\W/g, '');
+    var formattedInput = input.replace(/\W/g, "");
     if (states.includes(formattedInput)) {
- 	    var index = states.indexOf(formattedInput);
+      var index = states.indexOf(formattedInput);
       if (stateValues[index] == false) {
-      stateValues[index] = true;
-      console.log(stateValues)
-      $('#answerInput').val('');
-      console.log(stateValues)
-      updateMap();
-      updateCount();
-      updateGraph();
+        stateValues[index] = true;
+        console.log(stateValues);
+        $("#answerInput").val("");
+        console.log(stateValues);
+        updateMap();
+        updateCount();
+        updateGraph();
       }
-      
-}
-}
+    }
+  }
 });
