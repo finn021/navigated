@@ -1,7 +1,3 @@
-var lastentry;
-var up;
-var stateCode;
-
 let stateCodes = {
   alabama: "al",
   alaska: "ak",
@@ -64,20 +60,25 @@ let stateCodes = {
   wyoming: "wy",
 };
 
+var states = ['alabama','alaska','american samoa','arizona','arkansas','california','colorado','connecticut','delaware','district of columbia','federated states of micronesia','florida','georgia','guam','hawaii','idaho','illinois','indiana','iowa','kansas','kentucky','louisiana','maine','marshall islands','maryland','massachusetts','michigan','minnesota','mississippi','missouri','montana','nebraska','nevada','new hampshire','new jersey','new mexico','new york','north carolina','north dakota','northern mariana islands','ohio','oklahoma','oregon','palau','pennsylvania','puerto rico','rhode island','south carolina','south dakota','tennessee','texas','utah','vermont','virgin island','virginia','washington','west virginia','wisconsin','wyoming'];
+
+var stateValues = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+
 $(document).ready(function () {
   $("#map").usmap({});
 });
 
-$("#stateInput").keyup(function (event) {
-  if ($("#stateInput").val() != lastentry) {
-  }
-  lastentry = $("#stateInput").val();
-  console.log(lastentry);
-  stateCode = stateCodes[lastentry].toUpperCase();
-  console.log(stateCode);
-  $("#map").usmap({
-    stateSpecificStyles: {
-      stateCode: { fill: "yellow" },
-    },
-  });
+$(answerInput).on('input',function(e){
+  if (typeof this.value !== 'undefined') {
+    var input = this.value.toLowerCase();
+    var formattedInput = semirawinput.replace(/\W/g, '');
+    if (states.includes(formattedInput) {
+ 	    var index = states.indexOf(input);
+      people[index] = true;
+      $(answerInput).value = "";
+      updateMap();
+      updateCount();
+      updateGraph();
+}
+}
 });
