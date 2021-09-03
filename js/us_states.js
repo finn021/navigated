@@ -122,67 +122,11 @@ var states = [
   "wyoming",
 ];
 
-var stateValues = [
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-];
+window.onbeforeunload = function() {
+  return "If you leave this page, your progress will not be saved. Are you sure you want to continue?";
+};
+
+var stateValues = new Array(50).fill(false);
 
 $(answerInput).on("input", function (e) {
   if (typeof this.value !== "undefined") {
@@ -192,12 +136,8 @@ $(answerInput).on("input", function (e) {
       var index = states.indexOf(formattedInput);
       if (stateValues[index] == false) {
         stateValues[index] = true;
-        console.log(stateValues);
         $("#answerInput").val("");
-        console.log(stateValues);
-        updateMap();
-        updateCount();
-        updateGraph();
+        updateAll();
       }
     }
   }
