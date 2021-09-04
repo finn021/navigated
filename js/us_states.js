@@ -138,8 +138,8 @@ $(answerInput).on("input", function (e) {
         var count = stateValues.reduce(function(n, val) {
         return n + (val === true); }, 0);
          $("#count").text(count + "/50");
-        data.push(['us-' + stateCodes["formattedInput"], 1]);
-        console.log('us-' + stateCodes["formattedInput"]);
+        data.push(['us-' + stateCodes[formattedInput], 1]);
+        console.log('us-' + stateCodes[formattedInput]);
         document.getElementById("cell" + index).style.visibility = "visible";
       }
     }
