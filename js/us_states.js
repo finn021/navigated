@@ -24,7 +24,7 @@ var tbl = document.createElement('table');
 tbl.style.width  = '100px';
 tbl.style.border = '1px solid black';
 tbl.style.tableLayout = 'auto';
-tbwidth: 100%;
+tbl.style.width = '100%';
 for (var i = 0; i < 50; i++) {
   var tr = tbl.insertRow();
     for (var j = 0; j < 1; j++) {
