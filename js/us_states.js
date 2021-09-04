@@ -1,5 +1,6 @@
 var data = [];
 data.push(['us-al', 1]);
+data.push(['us-ca', 2]);
 
 Highcharts.mapChart('map-container', {
     chart: {
@@ -14,14 +15,17 @@ Highcharts.mapChart('map-container', {
   dataLabels: {
         enabled: false
   },
+    colorAxis: {
+                dataClasses: [{
+                    to: 1
+                }, {
+                    from: 2,
+                }]
+            },
       series: [{
         data: data,
-        name: 'Random data',
-        states: {
-            hover: {
-                color: '#BADA55'
-            }
-        },
+        name: 'States Found',
+          
         dataLabels: {
             enabled: false
         }
@@ -29,8 +33,8 @@ Highcharts.mapChart('map-container', {
         name: 'Separators',
         type: 'mapline',
         data: Highcharts.geojson(Highcharts.maps['countries/us/us-all'], 'mapline'),
-        color: 'silver',
-        nullColor: 'silver',
+        color: 'black',
+        nullColor: 'black',
         showInLegend: false,
         enableMouseTracking: false
     }]
