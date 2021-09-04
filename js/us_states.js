@@ -139,6 +139,7 @@ $(answerInput).on("input", function (e) {
         return n + (val === true); }, 0);
          $("#count").text(count + "/50");
         data.push(['us-' + stateCodes[formattedInput], 1]);
+        console.log(formattedInput);
         console.log('us-' + stateCodes[formattedInput]);
         document.getElementById("cell" + index).style.visibility = "visible";
       }
