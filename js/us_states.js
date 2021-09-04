@@ -1,3 +1,6 @@
+var data = [];
+data.push(['us-al', 1]);
+
 Highcharts.mapChart('map-container', {
     chart: {
         map: 'countries/us/us-all'
