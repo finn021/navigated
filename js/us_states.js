@@ -142,5 +142,4 @@ $(answerInput).on("input", function (e) {
         document.getElementById("cell" + index).style.visibility = "visible";
       }
     }
-  }
-});
+  });
