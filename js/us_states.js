@@ -1,11 +1,12 @@
 var data = [];
 data.push(['us-al', 1]);
-data.push(['us-ca', 2]);
 
 Highcharts.mapChart('map-container', {
     chart: {
         map: 'countries/us/us-all'
     },
+     colors: ['rgba(70,235,52,1)'],
+    
    mapNavigation: {
         enabled: false
    },
@@ -15,13 +16,6 @@ Highcharts.mapChart('map-container', {
   dataLabels: {
         enabled: false
   },
-    colorAxis: {
-                dataClasses: [{
-                    to: 1
-                }, {
-                    from: 2,
-                }]
-            },
       series: [{
         data: data,
         name: 'States Found',
