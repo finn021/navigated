@@ -5,11 +5,10 @@ var body = document.body;
 var tbl = document.createElement('table');
 tbl.style.width  = '100px';
 tbl.style.border = '1px solid black';
-var i, j;
-for ( i = 0; i < 50; i++) {
+for ( var i = 0; i < 50; i++) {
   var tr = tbl.insertRow();
   tr.setAttribute("id", i, 0);
-    or ( j = 0; j < 1; j++) {
+    or ( var j = 0; j < 1; j++) {
       if (i == 2 && j == 1) {
         break;
        } else {
