@@ -1,5 +1,4 @@
 var data = [];
-data.push(['us-al', 1]);
 
 Highcharts.mapChart('map-container', {
     chart: {
@@ -51,6 +50,58 @@ const statesFormatted = [
   'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 
   'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
 ];
+const stateCodes = [
+['arizona','az'],
+['alabama','al'],
+['alaska','ak'],
+['arkansas','ar'],
+['california','ca'],
+['colorado','co'],
+['connecticut','ct'],
+['delaware','de'],
+['florida','fl'],
+['georgia','ga'],
+['hawaii','hi'],
+['idaho','id'],
+['illinois','il'],
+['indiana','in'],
+['iowa','ia'],
+['kansas','ks'],
+['kentucky','ky'],
+['louisiana','la'],
+['maine','me'],
+['maryland','md'],
+['massachusetts','ma'],
+['michigan','mi'],
+['minnesota','mn'],
+['mississippi','ms'],
+['missouri','mo'],
+['montana','mt'],
+['nebraska','ne'],
+['nevada','nv'],
+['newhampshire','nh'],
+['newjersey','nj'],
+['newmexico','nm'],
+['newyork','ny'],
+['northcarolina','nc'],
+['northdakota','nd'],
+['ohio','oh'],
+['oklahoma','ok'],
+['oregon','or'],
+['pennsylvania','pa'],
+['rhodeisland','ri'],
+['southcarolina','sc'],
+['southdakota','sd'],
+['tennessee','tn'],
+['texas','tx'],
+['utah','ut'],
+['vermont','vt'],
+['virginia','va'],
+['washington','wa'],
+['westvirginia','wv'],
+['wisconsin','wi'],
+['wyoming','wy'],
+];
 
 var stateValues = new Array(50).fill(false);
 
@@ -76,7 +127,7 @@ for (var i = 0; i < 50; i++) {
 body.appendChild(tbl);
 
 $(answerInput).on("input", function (e) {
-  if (typeof this.value !== "undefined") {
+  if (typeof this.value !== "undefined") {}
     var input = this.value.toLowerCase();
     var formattedInput = input.replace(/\W/g, "");
     if (states.includes(formattedInput)) {
@@ -87,7 +138,7 @@ $(answerInput).on("input", function (e) {
         var count = stateValues.reduce(function(n, val) {
         return n + (val === true); }, 0);
          $("#count").text(count + "/50");
-        console.log("cell" + index);
+        data.push(['us-' + stateCodes["formattedInput"];
         document.getElementById("cell" + index).style.visibility = "visible";
       }
     }
