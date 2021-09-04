@@ -1,37 +1,5 @@
 var data = [];
 
-Highcharts.mapChart('map-container', {
-    chart: {
-        map: 'countries/us/us-all'
-    },
-     colors: ['rgba(70,235,52,1)'],
-    
-   mapNavigation: {
-        enabled: false
-   },
-    tooltip: {
-        enabled: false
-    },
-  dataLabels: {
-        enabled: false
-  },
-      series: [{
-        data: data,
-        name: 'States Found',
-          
-        dataLabels: {
-            enabled: false
-        }
-    }, {
-        name: 'Separators',
-        type: 'mapline',
-        data: Highcharts.geojson(Highcharts.maps['countries/us/us-all'], 'mapline'),
-        color: 'black',
-        nullColor: 'black',
-        showInLegend: false,
-        enableMouseTracking: false
-    }]
-});
 const states = [
   'alabama','alaska','arizona','arkansas','california','colorado','connecticut',
   'delaware','florida','georgia','hawaii','idaho','illinois','indiana','iowa','kansas',
@@ -142,6 +110,39 @@ $(answerInput).on("input", function (e) {
         console.log('us-' + stateCode);
         data.push(['us-' + stateCode, 1]);
         document.getElementById("cell" + index).style.visibility = "visible";
+          
+        Highcharts.mapChart('map-container', {
+    chart: {
+        map: 'countries/us/us-all'
+    },
+     colors: ['rgba(70,235,52,1)'],
+    
+   mapNavigation: {
+        enabled: false
+   },
+    tooltip: {
+        enabled: false
+    },
+  dataLabels: {
+        enabled: false
+  },
+      series: [{
+        data: data,
+        name: 'States Found',
+          
+        dataLabels: {
+            enabled: false
+        }
+    }, {
+        name: 'Separators',
+        type: 'mapline',
+        data: Highcharts.geojson(Highcharts.maps['countries/us/us-all'], 'mapline'),
+        color: 'black',
+        nullColor: 'black',
+        showInLegend: false,
+        enableMouseTracking: false
+    }]
+});
       }
     }
   });
