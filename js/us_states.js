@@ -76,7 +76,7 @@ var stateValues = new Array(50).fill(false);
 $(document).ready(function () {
   $(".navbar").load("../comp/navbar.html");
 });
-
+/*
 var body = document.body;
 var tbl = document.createElement('table');
 tbl.style.width  = '100px';
@@ -97,7 +97,7 @@ for (var i = 0; i < 50; i++) {
      }
    }
 body.appendChild(tbl);
-
+*/
 $(answerInput).on("input", function (e) {
   if (typeof this.value !== "undefined") {}
     var input = this.value.toLowerCase();
@@ -113,7 +113,7 @@ $(answerInput).on("input", function (e) {
         var stateCode = stateCodes[formattedInput];
         console.log('us-' + stateCode);
         data.push(['us-' + stateCode, 1]);
-        document.getElementById("cell" + index).style.visibility = "visible";
+       // document.getElementById("cell" + index).style.visibility = "visible";
           
         Highcharts.mapChart('map-container', {
     chart: {
