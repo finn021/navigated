@@ -25,14 +25,13 @@ tbl.style.width  = '100px';
 tbl.style.border = '1px solid black';
 for (var i = 0; i < 50; i++) {
   var tr = tbl.insertRow();
-  tr.setAttribute("id", "cell" + i, 0);
-  console.log("cell" + i);
     for (var j = 0; j < 1; j++) {
       if (i == 2 && j == 1) {
         break;
        } else {
          var td = tr.insertCell();
          td.appendChild(document.createTextNode(statesFormatted[i]));
+         td.setAttribute("id", "cell" + i, 0);
          td.style.visibility = "hidden";
          if (i == 1 && j == 1) {
            td.setAttribute('rowSpan', '2');
