@@ -23,6 +23,8 @@ var body = document.body;
 var tbl = document.createElement('table');
 tbl.style.width  = '100px';
 tbl.style.border = '1px solid black';
+tbl.style.tableLayout = 'auto';
+tbwidth: 100%;
 for (var i = 0; i < 50; i++) {
   var tr = tbl.insertRow();
     for (var j = 0; j < 1; j++) {
@@ -33,9 +35,6 @@ for (var i = 0; i < 50; i++) {
          td.appendChild(document.createTextNode(statesFormatted[i]));
          td.setAttribute("id", "cell" + i, 0);
          td.style.visibility = "hidden";
-         if (i == 1 && j == 1) {
-           td.setAttribute('rowSpan', '2');
-         }
        }
      }
    }
