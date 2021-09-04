@@ -8,6 +8,9 @@ Highcharts.mapChart('map-container', {
    mapNavigation: {
         enabled: false
    },
+    tooltip: {
+        enabled: false
+    },
   dataLabels: {
         enabled: false
   },
@@ -20,8 +23,7 @@ Highcharts.mapChart('map-container', {
             }
         },
         dataLabels: {
-            enabled: true,
-            format: '{point.name}'
+            enabled: false
         }
     }, {
         name: 'Separators',
