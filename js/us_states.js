@@ -26,6 +26,7 @@ tbl.style.border = '1px solid black';
 for (var i = 0; i < 50; i++) {
   var tr = tbl.insertRow();
   tr.setAttribute("id", "cell" + i, 0);
+  console.log("cell" + i);
     for (var j = 0; j < 1; j++) {
       if (i == 2 && j == 1) {
         break;
@@ -53,6 +54,7 @@ $(answerInput).on("input", function (e) {
         var count = stateValues.reduce(function(n, val) {
         return n + (val === true); }, 0);
          $("#count").text(count + "/50");
+        console.log("cell" + index);
         document.getElementById("cell" + index).style.visibility = "visible";
       }
     }
