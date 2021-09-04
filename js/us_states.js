@@ -1,30 +1,27 @@
 const states = ["alabama","alaska","arizona","arkansas","california","colorado","connecticut","delaware","florida","georgia","hawaii","idaho","illinois","indiana","iowa","kansas","kentucky","louisiana","maine","maryland","massachusetts","michigan","minnesota","mississippi","missouri","montana","nebraska","nevada","newhampshire","newjersey","newmexico","newyork","northcarolina","northdakota","ohio","oklahoma","oregon","pennsylvania","rhodeisland","southcarolina","southdakota","tennessee","texas","utah","vermont","virginia","washington","westvirginia","wisconsin","wyoming"];
 var stateValues = new Array(50).fill(false);
-    var body = document.body,
-        tbl  = document.createElement('table');
-    tbl.style.width  = '100px';
-    tbl.style.border = '1px solid black';
 
-    for(var i = 0; i < 50; i++){
-        var tr = tbl.insertRow();
-        tr.setAttribute("id", i, 0);
-        for(var j = 0; j < 1; j++){
-            if(i == 2 && j == 1){
-                break;
-            } else {
-                
-                var td = tr.insertCell();
-                
-                td.appendChild(document.createTextNode(states[i]));
-                td.style.color = rgba(0, 0, 0, 0);
-                td.style.border = '1px solid black';
-                if(i == 1 && j == 1){
-                    td.setAttribute('rowSpan', '2');
-                }
-            }
-        }
-    }
-    body.appendChild(tbl);
+var body = document.body,
+var tbl = document.createElement('table');
+tbl.style.width  = '100px';
+tbl.style.border = '1px solid black';
+for (var i = 0; i < 50; i++) {
+  var tr = tbl.insertRow();
+  tr.setAttribute("id", i, 0);
+    or (var j = 0; j < 1; j++) {
+      if (i == 2 && j == 1) {
+        break;
+       } else {
+         var td = tr.insertCell();
+         td.appendChild(document.createTextNode(states[i]));
+         td.style.border = '1px solid black';
+         if (i == 1 && j == 1) {
+           td.setAttribute('rowSpan', '2');
+         }
+       }
+     }
+   }
+body.appendChild(tbl);
 
 $(answerInput).on("input", function (e) {
   if (typeof this.value !== "undefined") {
