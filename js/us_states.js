@@ -1,3 +1,35 @@
+Highcharts.mapChart('map-container', {
+    chart: {
+        map: 'countries/us/us-all'
+    },
+   mapNavigation: {
+        enabled: false
+   },
+  dataLabels: {
+        enabled: false
+  },
+  series: [{
+        data: data,
+        name: 'Random data',
+        states: {
+            hover: {
+                color: '#BADA55'
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            format: '{point.name}'
+        }, {
+        name: 'Separators',
+        type: 'mapline',
+        data: Highcharts.geojson(Highcharts.maps['countries/us/us-all'], 'mapline'),
+        color: 'black',
+        nullColor: 'black',
+        showInLegend: false,
+        enableMouseTracking: false
+    }]
+});
+
 const states = [
   'alabama','alaska','arizona','arkansas','california','colorado','connecticut',
   'delaware','florida','georgia','hawaii','idaho','illinois','indiana','iowa','kansas',
