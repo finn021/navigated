@@ -25,13 +25,14 @@ tbl.style.width  = '100px';
 tbl.style.border = '1px solid black';
 for (var i = 0; i < 50; i++) {
   var tr = tbl.insertRow();
-  tr.setAttribute("id", i, 0);
+  tr.setAttribute("id", "cell" + i, 0);
     for (var j = 0; j < 1; j++) {
       if (i == 2 && j == 1) {
         break;
        } else {
          var td = tr.insertCell();
          td.appendChild(document.createTextNode(statesFormatted[i]));
+         td.style.visibility = "hidden";
          if (i == 1 && j == 1) {
            td.setAttribute('rowSpan', '2');
          }
@@ -52,7 +53,8 @@ $(answerInput).on("input", function (e) {
         var count = stateValues.reduce(function(n, val) {
         return n + (val === true); }, 0);
          $("#count").text(count + "/50");
-         
+        var cellIndex = "#cell" + index;
+         $(cellIndex).css('visibility', 'visible');
       }
     }
   }
