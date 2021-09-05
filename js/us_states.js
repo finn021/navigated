@@ -113,8 +113,10 @@ $(answerInput).on("input", function (e) {
         var stateCode = stateCodes[formattedInput];
         console.log('us-' + stateCode);
         data.push(['us-' + stateCode, 1]);
+        intMap();
        // document.getElementById("cell" + index).style.visibility = "visible";
           
+function intMap() {
         Highcharts.mapChart('map-container', {
     chart: {
         map: 'countries/us/us-all'
@@ -151,3 +153,4 @@ $(answerInput).on("input", function (e) {
       }
     }
   });
+}
