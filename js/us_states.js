@@ -72,9 +72,9 @@ const stateCodes = {
     };
 
 var stateValues = new Array(50).fill(false);
-
 $(document).ready(function () {
-  $(".navbar").load("../comp/navbar.html");
+    intMap();
+    $(".navbar").load("../comp/navbar.html");
 });
 /*
 var body = document.body;
