@@ -131,6 +131,7 @@ $(answerInput).on("input", function (e) {
         enabled: false
   },
       series: [{
+        nullColor: '#333333',
         data: data,
         name: 'States Found',
           
@@ -141,8 +142,8 @@ $(answerInput).on("input", function (e) {
         name: 'Separators',
         type: 'mapline',
         data: Highcharts.geojson(Highcharts.maps['countries/us/us-all'], 'mapline'),
-        color: 'black',
-        nullColor: 'black',
+        color: '#ffffff',
+        nullColor: '#ffffff',
         showInLegend: false,
         enableMouseTracking: false
     }]
